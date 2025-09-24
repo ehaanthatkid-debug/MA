@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* background image */
+            background-image: url("images/background.jpg");
+            background-size: cover;      /* makes image cover whole page */
+            background-position: center; /* centers the image */
+            background-repeat: no-repeat;/* prevents tiling */
+            height: 100vh;               /* full screen height */
+            
+            /* ✅ Make all text white */
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            color: white;  /* ✅ navbar links white */
+            text-decoration: none;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <h1>Resources</h1>
+
+    <p>Here are some helpful resources to learn more about cricket:</p>
+    <ul>
+        <li><a href="https://www.icc-cricket.com/hall-of-fame/hall-of-famers" target="_blank">ICC Hall of Fame</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Cricket" target="_blank">Cricket Wikipedia Page</a></li>
+        <li><a href="https://www.ecb.co.uk/play/how-to-play-cricket/beginners-guide" target="_blank">English Cricket Board Beginners Guide</a></li>
+    </ul>
+
+    <h2>Youtube Video for Beginners</h2>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/yol6xCktgeQ" 
+        title="Youtube video: cricket for beginners" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</body>
+</html>

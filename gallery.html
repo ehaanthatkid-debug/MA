@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Gallery</title>">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ✅ Internal CSS styles (extra requirement) -->
+    <style>
+        body {
+            background-color: #111; /* fallback if background image fails */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        p, li {
+            font-size: 18px;
+        }
+
+        .gallery img {
+            width: 40%;
+            margin: 10px;
+            float: right;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* ✅ Hover effect */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 20px rgba(255,255,255,0.7);
+        }
+
+        /* ✅ Simple CSS animation for heading */
+        h1 {
+            animation: fadeIn 2s ease-in-out;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <h1>Gallery</h1>
+    <p>Here are some photos of me playing cricket and watching cricket, with a description for each.</p>
+
+    <ul>
+        <li><strong>Image 1:</strong> Tournament in California </li>
+        <li><strong>Image 2:</strong> Regional Trials in California</li>
+        <li><strong>Image 3 & 4:</strong> Practice in India</li>
+        <li><strong>Image 5:</strong> Watching a game in England</li>
+    </ul>
+
+    <div class="gallery">
+        <img src="images/Image1.jpg" alt="Tournament in California">
+        <img src="images/Image2.jpg" alt="Regional Trials in California">
+        <img src="images/Image3.jpg" alt="Practice in India">
+        <img src="images/Image4.jpg" alt="Practice in India">
+        <img src="images/Image5.jpg" alt="Local league matches">
+    </div>
+</body>
+</html>
